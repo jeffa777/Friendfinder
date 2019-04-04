@@ -1,38 +1,64 @@
-body, html {
-    height: 100%;
-    margin: 0;
+body,
+html {
+	height: 100%;
+	margin: 0;
 }
 
 /*background image for body*/
 .bg {
-    background-image: url(https://images.pexels.com/photos/853407/pexels-photo-853407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    height: auto;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-  }
-
-#mainbody, .footer, .form-group {
-    background-color: rgba(40, 39, 46, 0.6)!important;
-    color: silver!important;
+	background-image: url(https://images.pexels.com/photos/853407/pexels-photo-853407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	height: auto;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
 }
 
-h2, h3 {
-    color: silver;
+#mainbody,
+.footer,
+.form-group {
+	background-color: rgba(40, 39, 46, 0.6) !important;
+	color: silver !important;
+}
+
+h2,
+h3 {
+	color: silver;
+}
+
+label {
+	padding-left: 15px;
+	padding-top: 7px;
 }
 
 #mainbody {
-    margin-bottom: 285px;
+	margin-bottom: 285px;
+}
+
+.input-group-text {
+	background-color: rgba(40, 39, 46, 0.8);
+	color: silver;
 }
 
 p {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 #submitbutton {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .footer {
-    border-top: 2px solid steelblue;
+	border-top: 2px solid steelblue;
+}
+
+.custom-select {
+	background-color: darkgrey;
+	border-color: black;
+	color: black;
+}
+
+.form-control {
+	background-color: lightgrey;
+	border-color: black;
+	color: black;
 }

@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffa777/Friendfinder.git"
+  },
+  "author": "Jeff Ambrosini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffa777/Friendfinder/issues"
+  },
+  "homepage": "https://github.com/jeffa777/Friendfinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
