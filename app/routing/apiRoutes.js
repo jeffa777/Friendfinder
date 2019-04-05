@@ -7,14 +7,14 @@ module.exports = function(app) {
 	app.get('/api/friends', function(req, res) {
 		res.json(peopleData);
 	});
-
+	// post route with the algorithim for matching friends
 	app.post('/api/friends', function(req, res) {
 		var userInput = req.body;
 		console.log(userInput);
 
 		var match = '';
 		var totalDiff = 2000;
-
+		// for loop/algorithim for matching
 		for (i = 0; i < peopleData.length; i++) {
 			var diff = 0;
 
