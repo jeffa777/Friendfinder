@@ -201,6 +201,27 @@
               $("#submitbutton").on("click", function(event) {
                 event.preventDefault();
 
+                // Form validation
+              function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function() {
+                  if ($(this).val() === "") {
+                    isValid = false;
+                  }
+                });
+
+                $(".chosen-select").each(function() {
+
+                  if ($(this).val() === "") {
+                    isValid = false;
+                  }
+                });
+                return isValid;
+              }
+
+              // If all required fields are filled
+              if (validateForm()) {
+
               var newFriend = {
                   name: $("#name").val().trim(),
                   photo: $("#photo").val().trim(),
@@ -226,8 +247,9 @@
                   $("#matchName").text(data.name);
                   $("#modal").modal("toggle");
 
-              });
+                })};
             });
+              
             </script>
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
